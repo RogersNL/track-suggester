@@ -9,117 +9,125 @@
   </head>
   <body>
     <div class="container">
-      <h1>Which track would be right for you?</h1>
-      <h2>Complete the form below to explore options that might best be suited for your future!</h2>
-      <!-- FORM -->
-      <form id="Track-Form">
-        <!-- NAME -->
-        <div class="form-group">
-          <label for="User-Name">Name</label>
-          <input id="User-Name" class="form-control" type="text">
-        </div>
+      <h1 class="jumbotron">Which Computer Programming Language Should You Learn?</h1>
+      <div class="panel panel-info">
+        <h2 class="panel-heading">Complete This Survey To Find Out!</h2>
+        <!-- FORM -->
+        <form class="panel-body" id="Track-Form">
+          <!-- NAME -->
+          <div class="form-group">
+            <label for="User-Name">Name</label>
+            <input id="User-Name" class="form-control" type="text">
+          </div>
 
-        <!-- QUESTION 1 -->
-        <label for="size-company">Do you see yourself working at a small company or a large company?</label>
-        <div class="radio">
-         <label>
-           <input type="radio" name="size-company" value="small" checked>
-           Small Company
-         </label>
-       </div>
-        <div class="radio">
-         <label>
-           <input type="radio" name="size-company" value="large" checked>
-           Large Company
-         </label>
-       </div>
-
-        <!-- QUESTION 2 -->
-        <label for="style-language">Would you prefer working with more rules that prevent a lot of errors or flexibility that allows for more creativity?</label>
-        <div class="radio">
-          <label>
-            <input type="radio" name="style-language" value="rules" checked>
-            Rules and Less Errors
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="style-language" value="flexible" checked>
-            Flexibility and Creativity
-        </div>
-
-        <!-- QUESTION 3 -->
-        <label for="discipline-preference">From the choices below, which discipline within programming sounds the most interesting?</label>
-        <div class="radio">
-          <label>
-            <input type="radio" name="discipline-preference" value="scripts" checked>
-            Scripts: like WordPress or WikiMedia
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="discipline-preference" value="website-creation" checked>
-            Creating Websites: like Twitter or Airbnb
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="discipline-preference" value="app-creation" checked>
-            Creating Apps: for mobile or web
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="discipline-preference" value="no-preference" checked>
-            No Preference: all or some seem interesting
-          </label>
-        </div>
-
-        <!-- QUESTION 4 -->
-        <div class="form-group">
-           <label for="company-preference">Which of these groups of companies would you be most interested to work for?</label>
-           <select class="form-control" id="company-preference">
-             <option value="1">Microsoft, Stack Overflow</option>
-             <option value="2">Android, Lyft, Fitbit, Intel</option>
-             <option value="3">Wikipedia, Facebook, Tumblr</option>
-             <option value="4">Kickstarter, Airbnb, Groupon</option>
-           </select>
+          <!-- QUESTION 1 -->
+          <label for="size-company">Do you see yourself working at a small company or a large company?</label>
+          <div class="radio">
+           <label>
+             <input type="radio" name="size-company" value="small" checked>
+             Small Company
+           </label>
+         </div>
+          <div class="radio">
+           <label>
+             <input type="radio" name="size-company" value="large" checked>
+             Large Company
+           </label>
          </div>
 
-        <!-- QUESTION 5 -->
-        <label for="program-care">Which of these best describes what you care about in a program?</label>
-        <div class="radio">
-          <label>
-            <input type="radio" name="program-care" value="logic" checked>
-            Efficient Structure and Logic
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="program-care" value="design" checked>
-            Design for User Interface and User Experience
-        </div>
+          <!-- QUESTION 2 -->
+          <label for="style-language">Would you prefer working with more rules that prevent a lot of errors or flexibility that allows for more creativity?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="style-language" value="rules" checked>
+              Rules and Less Errors
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="style-language" value="flexible" checked>
+              Flexibility and Creativity
+          </div>
 
-        <!-- BUTTON -->
-         <button type="submit" class="btn btn-success">Submit</button>
-      </form>
+          <!-- QUESTION 3 -->
+          <label for="discipline-preference">From the choices below, which discipline within programming sounds the most interesting?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="discipline-preference" value="scripts" checked>
+              Scripts: like WordPress or WikiMedia
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="discipline-preference" value="website-creation" checked>
+              Creating Websites: like Twitter or Airbnb
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="discipline-preference" value="app-creation" checked>
+              Creating Apps: for mobile or web
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="discipline-preference" value="no-preference" checked>
+              No Preference: all or some seem interesting
+            </label>
+          </div>
+
+          <!-- QUESTION 4 -->
+          <div class="form-group">
+             <label for="company-preference">Which of these groups of companies would you be most interested to work for?</label>
+             <select class="form-control" id="company-preference">
+               <option value="1">Microsoft, Stack Overflow</option>
+               <option value="2">Android, Lyft, Fitbit, Intel</option>
+               <option value="3">Wikipedia, Facebook, Tumblr</option>
+               <option value="4">Kickstarter, Airbnb, Groupon</option>
+             </select>
+           </div>
+
+          <!-- QUESTION 5 -->
+          <label for="program-care">Which of these best describes what you care about in a program?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="program-care" value="logic" checked>
+              Efficient Structure and Logic
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="program-care" value="design" checked>
+              Design for User Interface and User Experience
+          </div>
+
+          <!-- BUTTON -->
+           <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+      </div>
       <!-- LANGUAGE INFORMATION (Hidden) -->
       <!-- C# -->
-      <div class="Initially-Hidden" id="CSharp-Info">
-        <h2 class="chosen"><span class="Input-Name"></span>, you sound like you want to sell your soul to Microsoft.  Check out C#!:</h2>
-        <img class="logo" src="img/Csharp1.png" alt="Logo for C# language.">
-        <h3>C#</h3>
-        <p>C# is a widely used language among large buisnesses.  It has been around for a while and was originally designed to be easy to learn and use.  It's a high-level language so it doesn't require a lot of complex tasks but it's still not as high-level as others.  It has the backing of Microsoft, so if you're looking to work there this would be a great place to start!</p>
-        <p>Students at Epicodus will cover the following:</p>
-        <ul>
-          <li>Behavior-Driven Development</li>
-          <li>Object-Oriented Design Basics</li>
-          <li>Database Basics with SQL</li>
-        </ul>
-        <p>C# is fundamental in the fields of web and mobile development.</p>
+      <div class="Initially-Hidden panel panel-default" id="CSharp-Info">
+        <h2 class="chosen panel-heading"><span class="Input-Name"></span>, you sound like you want to sell your soul to Microsoft.  Check out C#!:</h2>
+        <div class="panel-body row">
+          <div class="panel-body col-md-3">
+            <img class="logo panel-body" src="img/Csharp1.png" alt="Logo for C# language.">
+          </div>
+          <div class="panel-body col-md-9">
+            <h3>C#</h3>
+            <p>C# is a widely used language among large buisnesses.  It has been around for a while and was originally designed to be easy to learn and use.  It's a high-level language so it doesn't require a lot of complex tasks but it's still not as high-level as others.  It has the backing of Microsoft, so if you're looking to work there this would be a great place to start!</p>
+            <p>Students at Epicodus will cover the following:</p>
+            <ul>
+              <li>Behavior-Driven Development</li>
+              <li>Object-Oriented Design Basics</li>
+              <li>Database Basics with SQL</li>
+            </ul>
+            <p>C# is fundamental in the fields of web and mobile development.</p>
+          </div>
+        </div>
       </div>
       <!-- JAVA -->
-      <div class="Initially-Hidden" id="JAVA-Info">
+      <div class="Initially-Hidden panel" id="JAVA-Info">
         <h2 class="chosen"><span class="Input-Name"></span>, you seem interested in a diverse set of skills that you can use in apps and other applications. Check out JAVA!:</h2>
         <img class="logo" src="img/java.png" alt="Logo for JAVA language.">
         <h3>JAVA</h3>
