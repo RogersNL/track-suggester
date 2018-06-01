@@ -13,10 +13,42 @@
       <h2>Complete the form below to explore options that might best be suited for your future!</h2>
       <!-- FORM -->
       <form id="Track-Form">
+        <!-- NAME -->
+        <div class="form-group">
+          <label for="User-Name">Name</label>
+          <input id="User-Name" class="form-control" type="text">
+        </div>
+        <!-- QUESTION 1 -->
+        <label for="size-company">Do you see yourself working at a small company or a large company?</label>
+       <div class="radio">
+         <label>
+           <input type="radio" name="size-company" value="small" checked>
+           Small Company
+         </label>
+       </div>
+       <div class="radio">
+         <label>
+           <input type="radio" name="size-company" value="large" checked>
+           Large Company
+         </label>
+       </div>
+         <!-- QUESTION 2 -->
+         <label for="style-language">Would you prefer working with more rules that prevent a lot of errors or flexibility that allows for more creativity?</label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="style-language" value="small" checked>
+            Rules and Less Errors
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="style-language" value="large" checked>
+            Flexibility and Creativity
+        </div>
 
       </form>
       <!-- LANGUAGE INFORMATION (Hidden) -->
-      <div id="C#-Info">
+      <div class="Initially-Hidden" id="C#-Info">
         <img class="logo" src="img/Csharp1.png" alt="Logo for C# language.">
         <h3>C#</h3>
         <p>C# is a widely used language among large buisnesses.  It has been around for a while and was originally designed to be easy to learn and use.  It's a high-level language so it doesn't require a lot of complex tasks but it's still not as high-level as others.  It has the backing of Microsoft, so if you're looking to work there this would be a great place to start!</p>
@@ -28,7 +60,7 @@
         </ul>
         <p>C# is fundamental in the fields of web and mobile development.</p>
       </div>
-      <div id="JAVA-Info">
+      <div class="Initially-Hidden" id="JAVA-Info">
         <img class="logo" src="img/java.png" alt="Logo for JAVA language.">
         <h3>JAVA</h3>
         <p>JAVA is by far one of the most popular and versatile of the programming languages.  Its use ranges from Android smartphone apps to complete computer applications.  Due to its versatility, being able to run the same code on two devices that are nothing alike, it is commonly used in enterprise-level firms.</p>
@@ -41,7 +73,7 @@
         </ul>
         <p>JAVA is commonly used in everything from web applications to backend services to mobile applications to embedded systems.</p>
       </div>
-      <div id="PHP-Info">
+      <div class="Initially-Hidden" id="PHP-Info">
         <img class="logo" src="img/PHP.png" alt="Logo for PHP language.">
         <h3>PHP</h3>
         <p>PHP is best known for its overwhelming use in backend structure for websites.  With 80% of websites taking advantage of its 'server-side' scripting capabilities, it is a great first language to learn.  Some notable sites that utilize PHP are WordPress, Facebook, and Tumblr.  PHP allows the user to collect form data, generate dynamic page content, send and receive cookies, and much more!</p>
@@ -51,8 +83,9 @@
           <li>Test-Driven Development with PHPUnit</li>
           <li>Database-Basics with SQL</li>
         </ul>
+        <p>PHP is a must for backend website building.</p>
       </div>
-      <div id="RUBY-Info">
+      <div class="Initially-Hidden" id="RUBY-Info">
         <img class="logo" src="img/ruby.png" alt="Logo for RUBY language.">
         <h3>RUBY</h3>
         <p>RUBY is a fast-paced, and even FUN, language that utilizes its innovative rails-network to quickly create beautiful, functional websites.  With RUBY, there's often multiple 'best' solutions to a problem that allows for creativity from the programmer.  It is a high-level language that focuses more on the backend, allowing sites have account creation, information entry, and interactive dynamic content.  Young companies and start ups often use RUBY for their websites.</p>
@@ -63,6 +96,7 @@
           <li>Database Basics</li>
           <li>Advanced Databases with Acive Record</li>
         </ul>
+        <p>RUBY has a steep learning curve but allows for diversity and speed in website building.</p>
       </div>
     </div>
   </body>
