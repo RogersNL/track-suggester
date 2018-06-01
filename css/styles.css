@@ -2,7 +2,7 @@
   width:100%;
 }
 .Initially-Hidden {
-
+  display:none;
 }
 .panel {
   padding: 30px;
@@ -13,4 +13,10 @@
 }
 .form-control {
   width:250px;
+}
+.has-error {
+  display:none;
+}
+#error-message {
+  color:red;
 }

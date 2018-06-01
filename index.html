@@ -15,9 +15,14 @@
         <!-- FORM -->
         <form class="panel-body" id="Track-Form">
           <!-- NAME -->
-          <div class="form-group">
+          <div class="no-error form-group">
             <label for="User-Name">Name</label>
             <input id="User-Name" class="form-control" type="text">
+          </div>
+          <div class="form-group has-error">
+            <label for="User-Name-Again">Name</label>
+            <input id="User-Name-Again" class="form-control " type="text">
+            <p id="error-message">Please enter a name.</p>
           </div>
 
           <!-- QUESTION 1 -->
