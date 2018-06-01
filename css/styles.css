@@ -1,8 +1,9 @@
 .logo {
   width:100%;
+  padding-top:60px;
 }
 .Initially-Hidden {
-  display:none;
+    display:none;
 }
 .panel {
   padding: 30px;
@@ -24,7 +25,20 @@ body {
   background-image: url("../img/background.jpg");
   background-repeat: no-repeat;
   background-size:cover;
+  font-family: 'Kanit', sans-serif;
 }
 h2 {
   text-align: center;
+}
+label {
+  font-size: 20px;
+}
+h3 {
+  font-size: 30px;
+}
+div.panel-body p {
+  font-size:15px;
+}
+li {
+  font-size:15px;
 }

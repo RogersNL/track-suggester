@@ -3,6 +3,7 @@
   <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
     <title>Track Suggester</title>
@@ -10,9 +11,9 @@
   <body>
     <div class="container">
       <h1 class="jumbotron">Which Computer Programming Language Should You Learn?</h1>
+      <!-- FORM -->
       <div class="panel panel-default">
         <h2 class="panel-heading">Complete This Survey To Find Out!</h2>
-        <!-- FORM -->
         <form class="panel-body" id="Track-Form">
           <!-- NAME -->
           <div class="no-error form-group">
@@ -107,7 +108,7 @@
           </div>
 
           <!-- BUTTON -->
-           <button type="submit" class="btn btn-success">Submit</button>
+          <button type="submit" onclick="window.location.href='#bottom-of-page'" class="btn btn-success">Submit</button>
         </form>
       </div>
       <!-- LANGUAGE INFORMATION (Hidden) -->
@@ -197,6 +198,7 @@
           </div>
         </div>
       </div>
+      <a id="bottom-of-page"></a>
     </div>
   </body>
 </html>

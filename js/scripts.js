@@ -14,7 +14,7 @@ $(document).ready(function(){
     // CHECK NAME
     if (userName === "" && userNameAgain === "") {
       $(".no-error").hide();
-      $(".has-error").show();
+      $(".has-error").fadeIn();
     } else {
       // INSERT NAME
       $(".Input-Name").text(userName + userNameAgain);
@@ -24,25 +24,25 @@ $(document).ready(function(){
         if (inputQuestion5 === "logic") {
           $("#CSharp-Info").hide();
           $("#JAVA-Info").hide();
-          $("#PHP-Info").show();
+          $("#PHP-Info").fadeIn();
           $("#RUBY-Info").hide();
         } else {
           $("#CSharp-Info").hide();
           $("#JAVA-Info").hide();
           $("#PHP-Info").hide();
-          $("#RUBY-Info").show();
+          $("#RUBY-Info").fadeIn();
         }
 
         // LARGE & RULES
       } else if (inputQuestion1 === "large" && inputQuestion2 === "rules") {
         if (inputQuestion4 === "1") {
-          $("#CSharp-Info").show();
+          $("#CSharp-Info").fadeIn();
           $("#JAVA-Info").hide();
           $("#PHP-Info").hide();
           $("#RUBY-Info").hide();
         } else {
           $("#CSharp-Info").hide();
-          $("#JAVA-Info").show();
+          $("#JAVA-Info").fadeIn();
           $("#PHP-Info").hide();
           $("#RUBY-Info").hide();
         }
@@ -53,18 +53,18 @@ $(document).ready(function(){
         if (inputQuestion3 === "scripts" && inputQuestion5 === "logic") {
           $("#CSharp-Info").hide();
           $("#JAVA-Info").hide();
-          $("#PHP-Info").show();
+          $("#PHP-Info").fadeIn();
           $("#RUBY-Info").hide();
           //C# OR JAVA TEST
         } else if (inputQuestion3 === "no-preference" && inputQuestion1 === "large") {
           if (inputQuestion4 === "1") {
-            $("#CSharp-Info").show();
+            $("#CSharp-Info").fadeIn();
             $("#JAVA-Info").hide();
             $("#PHP-Info").hide();
             $("#RUBY-Info").hide();
           } else {
             $("#CSharp-Info").hide();
-            $("#JAVA-Info").show();
+            $("#JAVA-Info").fadeIn();
             $("#PHP-Info").hide();
             $("#RUBY-Info").hide();
           }
@@ -75,35 +75,35 @@ $(document).ready(function(){
             $("#CSharp-Info").hide();
             $("#JAVA-Info").hide();
             $("#PHP-Info").hide();
-            $("#RUBY-Info").show();
+            $("#RUBY-Info").fadeIn();
           } else {
             $("#CSharp-Info").hide();
-            $("#JAVA-Info").show();
+            $("#JAVA-Info").fadeIn();
             $("#PHP-Info").hide();
             $("#RUBY-Info").hide();
           }
           //OUTLIERS
         } else {
           if (inputQuestion4 === "1") {
-            $("#CSharp-Info").show();
+            $("#CSharp-Info").fadeIn();
             $("#JAVA-Info").hide();
             $("#PHP-Info").hide();
             $("#RUBY-Info").hide();
           } else if (inputQuestion4 === "2") {
             $("#CSharp-Info").hide();
-            $("#JAVA-Info").show();
+            $("#JAVA-Info").fadeIn();
             $("#PHP-Info").hide();
             $("#RUBY-Info").hide();
           } else if (inputQuestion4 === "3") {
             $("#CSharp-Info").hide();
             $("#JAVA-Info").hide();
-            $("#PHP-Info").show();
+            $("#PHP-Info").fadeIn();
             $("#RUBY-Info").hide();
           } else {
             $("#CSharp-Info").hide();
             $("#JAVA-Info").hide();
             $("#PHP-Info").hide();
-            $("#RUBY-Info").show();
+            $("#RUBY-Info").fadeIn();
           }
         }
       }
