@@ -18,22 +18,24 @@
           <label for="User-Name">Name</label>
           <input id="User-Name" class="form-control" type="text">
         </div>
+
         <!-- QUESTION 1 -->
         <label for="size-company">Do you see yourself working at a small company or a large company?</label>
-       <div class="radio">
+        <div class="radio">
          <label>
            <input type="radio" name="size-company" value="small" checked>
            Small Company
          </label>
        </div>
-       <div class="radio">
+        <div class="radio">
          <label>
            <input type="radio" name="size-company" value="large" checked>
            Large Company
          </label>
        </div>
-         <!-- QUESTION 2 -->
-         <label for="style-language">Would you prefer working with more rules that prevent a lot of errors or flexibility that allows for more creativity?</label>
+
+        <!-- QUESTION 2 -->
+        <label for="style-language">Would you prefer working with more rules that prevent a lot of errors or flexibility that allows for more creativity?</label>
         <div class="radio">
           <label>
             <input type="radio" name="style-language" value="small" checked>
@@ -45,33 +47,61 @@
             <input type="radio" name="style-language" value="large" checked>
             Flexibility and Creativity
         </div>
+
         <!-- QUESTION 3 -->
-         <label for="discipline-preference">From the choices below, which discipline within programming sounds the most interesting?</label>
-         <div class="radio">
-           <label>
-             <input type="radio" name="discipline-preference" value="scripts" checked>
-             Scripts: like WordPress or WikiMedia
-           </label>
-         </div>
-         <div class="radio">
-           <label>
-             <input type="radio" name="discipline-preference" value="website-creation" checked>
-             Creating Websites: like Twitter or Airbnb
-           </label>
-         </div>
-         <div class="radio">
-           <label>
-             <input type="radio" name="discipline-preference" value="app-creation" checked>
-             Creating Apps: for mobile or web
-           </label>
-         </div>
-         <div class="radio">
-           <label>
-             <input type="radio" name="discipline-preference" value="no-preference" checked>
-             No Preference: All or some seem interesting
-           </label>
+        <label for="discipline-preference">From the choices below, which discipline within programming sounds the most interesting?</label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="discipline-preference" value="scripts" checked>
+            Scripts: like WordPress or WikiMedia
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="discipline-preference" value="website-creation" checked>
+            Creating Websites: like Twitter or Airbnb
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="discipline-preference" value="app-creation" checked>
+            Creating Apps: for mobile or web
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="discipline-preference" value="no-preference" checked>
+            No Preference: all or some seem interesting
+          </label>
+        </div>
+
+        <!-- QUESTION 4 -->
+        <div class="form-group">
+           <label for="company-preference">Which of these groups of companies would you be most interested to work for?</label>
+           <select class="form-control" id="company-preference">
+             <option>Microsoft, Stack Overflow</option>
+             <option>Android, Lyft, Fitbit, Intel</option>
+             <option>Wikipedia, Facebook, Tumblr</option>
+             <option>Kickstarter, Airbnb, Groupon</option>
+           </select>
          </div>
 
+        <!-- QUESTION 5 -->
+        <label for="program-care">Which of these best describes what you care about in a program?</label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="program-care" value="small" checked>
+            Efficient Structure and Logic
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="program-care" value="large" checked>
+            Design for User Interface and User Experience
+        </div>
+
+        <!-- BUTTON -->
+         <button type="submit" class="btn btn-success">Submit</button>
       </form>
       <!-- LANGUAGE INFORMATION (Hidden) -->
       <div class="Initially-Hidden" id="C#-Info">
