@@ -3,59 +3,101 @@ $(document).ready(function(){
     event.preventDefault();
 
     // ASSIGN VARIABLES
+    var userName = $("input#User-Name").val();
     var inputQuestion1 = $("input:radio[name=size-company]:checked").val();
     var inputQuestion2 = $("input:radio[name=style-language]:checked").val();
     var inputQuestion3 = $("input:radio[name=discipline-preference]:checked").val();
     var inputQuestion4 = $("select#company-preference").val();
     var inputQuestion5 = $("input:radio[name=program-care]:checked").val();
 
+    // INSERT NAME
+    $(".Input-Name").text(userName);
     // CHOOSING TRACK
       // SMALL & FLEXIBLE
     if (inputQuestion1 === "small" && inputQuestion2 === "flexible") {
       if (inputQuestion5 === "logic") {
-        alert("PHP");
+        $("#CSharp-Info").hide();
+        $("#JAVA-Info").hide();
+        $("#PHP-Info").show();
+        $("#RUBY-Info").hide();
       } else {
-        alert("RUBY");
+        $("#CSharp-Info").hide();
+        $("#JAVA-Info").hide();
+        $("#PHP-Info").hide();
+        $("#RUBY-Info").show();
       }
 
       // LARGE & RULES
     } else if (inputQuestion1 === "large" && inputQuestion2 === "rules") {
       if (inputQuestion4 === "1") {
-        alert("C#");
+        $("#CSharp-Info").show();
+        $("#JAVA-Info").hide();
+        $("#PHP-Info").hide();
+        $("#RUBY-Info").hide();
       } else {
-        alert("JAVA");
+        $("#CSharp-Info").hide();
+        $("#JAVA-Info").show();
+        $("#PHP-Info").hide();
+        $("#RUBY-Info").hide();
       }
 
       // Q1 AND Q2 CONFLICTING
     } else {
         // PHP TEST
       if (inputQuestion3 === "scripts" && inputQuestion5 === "logic") {
-        alert("PHP");
+        $("#CSharp-Info").hide();
+        $("#JAVA-Info").hide();
+        $("#PHP-Info").show();
+        $("#RUBY-Info").hide();
         //C# OR JAVA TEST
       } else if (inputQuestion3 === "no-preference" && inputQuestion1 === "large") {
         if (inputQuestion4 === "1") {
-        alert("C#");
+          $("#CSharp-Info").show();
+          $("#JAVA-Info").hide();
+          $("#PHP-Info").hide();
+          $("#RUBY-Info").hide();
         } else {
-        alert("JAVA");
+          $("#CSharp-Info").hide();
+          $("#JAVA-Info").show();
+          $("#PHP-Info").hide();
+          $("#RUBY-Info").hide();
         }
 
         //RUBY OR JAVA TEST
       } else if (inputQuestion3 === "app-creation") {
         if (inputQuestion5 === "design") {
-          alert("RUBY");
+          $("#CSharp-Info").hide();
+          $("#JAVA-Info").hide();
+          $("#PHP-Info").hide();
+          $("#RUBY-Info").show();
         } else {
-          alert("JAVA");
+          $("#CSharp-Info").hide();
+          $("#JAVA-Info").show();
+          $("#PHP-Info").hide();
+          $("#RUBY-Info").hide();
         }
         //OUTLIERS
       } else {
         if (inputQuestion4 === "1") {
-          alert("C#");
+          $("#CSharp-Info").show();
+          $("#JAVA-Info").hide();
+          $("#PHP-Info").hide();
+          $("#RUBY-Info").hide();
         } else if (inputQuestion4 === "2") {
-          alert("JAVA");
+          $("#CSharp-Info").hide();
+          $("#JAVA-Info").show();
+          $("#PHP-Info").hide();
+          $("#RUBY-Info").hide();
         } else if (inputQuestion4 === "3") {
-          alert("PHP");
+          $("#CSharp-Info").hide();
+          $("#JAVA-Info").hide();
+          $("#PHP-Info").show();
+          $("#RUBY-Info").hide();
         } else {
-          alert("RUBY");
+          $("#CSharp-Info").hide();
+          $("#JAVA-Info").hide();
+          $("#PHP-Info").hide();
+          $("#RUBY-Info").show();
         }
       }
     }
